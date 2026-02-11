@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>X Theme Colors</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="popup" aria-labelledby="popup-title">
+      <h1 id="popup-title" class="title">X Theme Colors</h1>
+
+      <div class="field">
+        <label for="bgColor">Background color</label>
+        <input id="bgColor" name="bgColor" type="color" aria-describedby="bg-help">
+        <p id="bg-help" class="help">Applied to the main layout surfaces on X.</p>
+      </div>
+
+      <div class="field">
+        <label for="textColor">Text color</label>
+        <input id="textColor" name="textColor" type="color" aria-describedby="text-help">
+        <p id="text-help" class="help">Used for timeline, sidebar, and navigation text.</p>
+      </div>
+
+      <div class="field">
+        <label for="borderColor">Border color</label>
+        <input id="borderColor" name="borderColor" type="color" aria-describedby="border-help">
+        <p id="border-help" class="help">Applied to separators, cards, and panel borders.</p>
+      </div>
+
+      <section class="preview" aria-labelledby="preview-title">
+        <h2 id="preview-title">Preview</h2>
+        <div id="previewCard" class="preview-card">
+          <p class="preview-title">Sample content</p>
+          <p class="preview-copy">This matches your selected colors.</p>
+        </div>
+      </section>
+
+      <button id="resetButton" type="button" class="reset-button">Reset to Dim defaults</button>
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
