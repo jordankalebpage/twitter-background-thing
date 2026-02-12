@@ -174,6 +174,15 @@
       "ol",
       "[data-testid='tweetText']"
     ];
+    const actionTextSelectors = [
+      "[data-testid='reply']",
+      "[data-testid='retweet']",
+      "[data-testid='like']",
+      "[data-testid='bookmark']",
+      "a[href*='/analytics']",
+      "[aria-label='Share post']",
+      "[aria-label='Share']"
+    ];
     const borderSelectors = [
       "main[role='main']",
       "header[role='banner']",
@@ -202,11 +211,14 @@
     const textRules = textSelectors
       .map((selector) => `${selector} { color: ${theme.textColor} !important; }`)
       .join("\n");
+    const actionTextRules = actionTextSelectors
+      .map((selector) => `${selector}, ${selector} * { color: ${theme.textColor} !important; }`)
+      .join("\n");
     const borderRules = borderSelectors
       .map((selector) => `${selector} { border-color: ${theme.borderColor} !important; }`)
       .join("\n");
 
-    return `${bgRules}\n${textRules}\n${borderRules}\n`;
+    return `${bgRules}\n${textRules}\n${actionTextRules}\n${borderRules}\n`;
   }
 
   function ensureStyleTag() {
