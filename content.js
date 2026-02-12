@@ -162,14 +162,7 @@
       "section",
       "article",
       "aside",
-      "div",
-      "span",
       "p",
-      "a",
-      "button",
-      "label",
-      "strong",
-      "em",
       "h1",
       "h2",
       "h3",
@@ -179,10 +172,6 @@
       "li",
       "ul",
       "ol",
-      "small",
-      "time",
-      "[role='button']",
-      "[role='menuitem']",
       "[data-testid='tweetText']"
     ];
     const borderSelectors = [
