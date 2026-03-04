@@ -10,7 +10,7 @@ You can customize three things:
 
 The defaults are the original Dim theme values. There's a reset button if you want to get back there.
 
-> **Note:** This extension is not perfect. Twitter's UI is dynamic and some elements may not pick up the theme immediately or at all. If you just want Dim back (plus a lot of other features), [Control Panel for Twitter](https://chrome.google.com/webstore/detail/control-panel-for-twitter/kpmjjdhbcfebfjgdnpjagcndoelnidfj) is a more complete solution, although the chat window remains black for me.
+> **Note:** This extension is not perfect. Twitter's UI is dynamic and some elements may not pick up the theme immediately or at all. If you just want Dim back (plus a lot of other features), [Control Panel for Twitter](https://chrome.google.com/webstore/detail/control-panel-for-twitter/kpmjjdhbcfebfjgdnpjagcndoelnidfj) is a more complete solution.
 
 ## Installation
 
